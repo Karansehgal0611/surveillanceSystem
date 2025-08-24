@@ -1,0 +1,14 @@
+Project Modules
+===============
+
+This document contains the auto-generated documentation for the project's modules.
+
+.. automodule:: surveillance_system
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+.. automodule:: anomaly_detector
+   :members:
+   :undoc-members:
+   :show-inheritance:

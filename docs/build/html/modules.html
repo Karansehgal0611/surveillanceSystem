@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Project Modules &#8212; SurveillanceSystem  documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=6625fa76" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css?v=039e1c02" />
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js?v=b3ba4146"></script>
+    <script src="_static/doctools.js?v=888ff710"></script>
+    <script src="_static/sphinx_highlight.js?v=4825356b"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Welcome to SurveillanceSystem’s documentation!" href="index.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="project-modules">
+<h1>Project Modules<a class="headerlink" href="#project-modules" title="Permalink to this heading">¶</a></h1>
+<p>This document contains the auto-generated documentation for the project’s modules.</p>
+<span class="target" id="module-surveillance_system"></span><dl class="py class">
+<dt class="sig sig-object py" id="surveillance_system.AvenueDatasetLoader">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">surveillance_system.</span></span><span class="sig-name descname"><span class="pre">AvenueDatasetLoader</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dataset_path</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'/home/karan/pyKaran/surveillanceSystem/data/Avenue</span> <span class="pre">Dataset'</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/surveillance_system.html#AvenueDatasetLoader"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#surveillance_system.AvenueDatasetLoader" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="surveillance_system.AvenueDatasetLoader.get_testing_videos">
+<span class="sig-name descname"><span class="pre">get_testing_videos</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/surveillance_system.html#AvenueDatasetLoader.get_testing_videos"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#surveillance_system.AvenueDatasetLoader.get_testing_videos" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="surveillance_system.AvenueDatasetLoader.get_training_videos">
+<span class="sig-name descname"><span class="pre">get_training_videos</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/surveillance_system.html#AvenueDatasetLoader.get_training_videos"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#surveillance_system.AvenueDatasetLoader.get_training_videos" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="surveillance_system.ObjectDetectionSystem">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">surveillance_system.</span></span><span class="sig-name descname"><span class="pre">ObjectDetectionSystem</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dataset_path</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'/home/karan/pyKaran/surveillanceSystem/data/Avenue</span> <span class="pre">Dataset'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">output_dir</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'output'</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/surveillance_system.html#ObjectDetectionSystem"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#surveillance_system.ObjectDetectionSystem" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="surveillance_system.ObjectDetectionSystem.calculate_motion_level">
+<span class="sig-name descname"><span class="pre">calculate_motion_level</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">previous_frame</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">current_frame</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/surveillance_system.html#ObjectDetectionSystem.calculate_motion_level"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#surveillance_system.ObjectDetectionSystem.calculate_motion_level" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calculate motion level between two frames</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="surveillance_system.ObjectDetectionSystem.draw_detections_with_anomalies">
+<span class="sig-name descname"><span class="pre">draw_detections_with_anomalies</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">frame</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tracked_objects</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">anomalies</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">frame_count</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/surveillance_system.html#ObjectDetectionSystem.draw_detections_with_anomalies"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#surveillance_system.ObjectDetectionSystem.draw_detections_with_anomalies" title="Permalink to this definition">¶</a></dt>
+<dd><p>Draw bounding boxes and labels for tracked objects, highlighting anomalies</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>frame</strong> – Input frame</p></li>
+<li><p><strong>tracked_objects</strong> – Dictionary of tracked objects</p></li>
+<li><p><strong>anomalies</strong> – List of anomaly messages</p></li>
+<li><p><strong>frame_count</strong> – Current frame number (optional)</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Frame with drawn detections and anomaly indicators</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="surveillance_system.ObjectDetectionSystem.draw_tracked_objects">
+<span class="sig-name descname"><span class="pre">draw_tracked_objects</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">frame</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tracked_objects</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">anomalies</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/surveillance_system.html#ObjectDetectionSystem.draw_tracked_objects"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#surveillance_system.ObjectDetectionSystem.draw_tracked_objects" title="Permalink to this definition">¶</a></dt>
+<dd><p>Draw tracked objects with IDs, paths, and anomaly highlighting</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="surveillance_system.ObjectDetectionSystem.extract_all_frames">
+<span class="sig-name descname"><span class="pre">extract_all_frames</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">video_type</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'training'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">resize</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">(640,</span> <span class="pre">360)</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_frames_per_video</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">50</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">save_frames</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/surveillance_system.html#ObjectDetectionSystem.extract_all_frames"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#surveillance_system.ObjectDetectionSystem.extract_all_frames" title="Permalink to this definition">¶</a></dt>
+<dd><p>Extract frames from all videos of a specific type</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="surveillance_system.ObjectDetectionSystem.initialize_detector">
+<span class="sig-name descname"><span class="pre">initialize_detector</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/surveillance_system.html#ObjectDetectionSystem.initialize_detector"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#surveillance_system.ObjectDetectionSystem.initialize_detector" title="Permalink to this definition">¶</a></dt>
+<dd><p>Initialize the object detector when needed</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="surveillance_system.ObjectDetectionSystem.process_all_videos">
+<span class="sig-name descname"><span class="pre">process_all_videos</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">video_type</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'training'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_frames_per_video</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/surveillance_system.html#ObjectDetectionSystem.process_all_videos"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#surveillance_system.ObjectDetectionSystem.process_all_videos" title="Permalink to this definition">¶</a></dt>
+<dd><p>Process all videos of a specific type</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="surveillance_system.ObjectDetectionSystem.process_video">
+<span class="sig-name descname"><span class="pre">process_video</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">video_path</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">output_video_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'output.avi'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_frames</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/surveillance_system.html#ObjectDetectionSystem.process_video"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#surveillance_system.ObjectDetectionSystem.process_video" title="Permalink to this definition">¶</a></dt>
+<dd><p>Process a video and save object detection results</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="surveillance_system.ObjectDetectionSystem.save_detection_log">
+<span class="sig-name descname"><span class="pre">save_detection_log</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename_prefix</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'detection_log'</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/surveillance_system.html#ObjectDetectionSystem.save_detection_log"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#surveillance_system.ObjectDetectionSystem.save_detection_log" title="Permalink to this definition">¶</a></dt>
+<dd><p>Save detection results to a CSV file with anomaly information</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="surveillance_system.ObjectDetector">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">surveillance_system.</span></span><span class="sig-name descname"><span class="pre">ObjectDetector</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">conf_threshold</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.5</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/surveillance_system.html#ObjectDetector"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#surveillance_system.ObjectDetector" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="surveillance_system.ObjectDetector.detect_objects">
+<span class="sig-name descname"><span class="pre">detect_objects</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">frame</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/surveillance_system.html#ObjectDetector.detect_objects"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#surveillance_system.ObjectDetector.detect_objects" title="Permalink to this definition">¶</a></dt>
+<dd><p>Detect objects in a frame</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="surveillance_system.ObjectDetector.draw_detections">
+<span class="sig-name descname"><span class="pre">draw_detections</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">frame</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">detections</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/surveillance_system.html#ObjectDetector.draw_detections"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#surveillance_system.ObjectDetector.draw_detections" title="Permalink to this definition">¶</a></dt>
+<dd><p>Draw detection bounding boxes and labels on frame</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="surveillance_system.VideoProcessor">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">surveillance_system.</span></span><span class="sig-name descname"><span class="pre">VideoProcessor</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">video_path</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">output_dir</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/surveillance_system.html#VideoProcessor"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#surveillance_system.VideoProcessor" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="surveillance_system.VideoProcessor.extract_frames">
+<span class="sig-name descname"><span class="pre">extract_frames</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">resize</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">normalize</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_frames</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">save_frames</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/surveillance_system.html#VideoProcessor.extract_frames"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#surveillance_system.VideoProcessor.extract_frames" title="Permalink to this definition">¶</a></dt>
+<dd><p>Extract frames from video with optional resizing and normalization</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="surveillance_system.VideoProcessor.get_video_writer">
+<span class="sig-name descname"><span class="pre">get_video_writer</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">output_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fps</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">size</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/surveillance_system.html#VideoProcessor.get_video_writer"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#surveillance_system.VideoProcessor.get_video_writer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a video writer for output</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="surveillance_system.VideoProcessor.initialize_video">
+<span class="sig-name descname"><span class="pre">initialize_video</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/surveillance_system.html#VideoProcessor.initialize_video"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#surveillance_system.VideoProcessor.initialize_video" title="Permalink to this definition">¶</a></dt>
+<dd><p>Initialize video capture object</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="surveillance_system.VideoProcessor.release">
+<span class="sig-name descname"><span class="pre">release</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/surveillance_system.html#VideoProcessor.release"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#surveillance_system.VideoProcessor.release" title="Permalink to this definition">¶</a></dt>
+<dd><p>Release video capture object</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="surveillance_system.main">
+<span class="sig-prename descclassname"><span class="pre">surveillance_system.</span></span><span class="sig-name descname"><span class="pre">main</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/surveillance_system.html#main"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#surveillance_system.main" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<span class="target" id="module-anomaly_detector"></span><dl class="py class">
+<dt class="sig sig-object py" id="anomaly_detector.AbandonedObjectDetector">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">anomaly_detector.</span></span><span class="sig-name descname"><span class="pre">AbandonedObjectDetector</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">abandonment_time</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">8.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_distance</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">150</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/anomaly_detector.html#AbandonedObjectDetector"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#anomaly_detector.AbandonedObjectDetector" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="anomaly_detector.AbandonedObjectDetector.detect_abandoned_objects">
+<span class="sig-name descname"><span class="pre">detect_abandoned_objects</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tracked_objects</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">frame_count</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fps</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/anomaly_detector.html#AbandonedObjectDetector.detect_abandoned_objects"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#anomaly_detector.AbandonedObjectDetector.detect_abandoned_objects" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="anomaly_detector.AnomalyDetector">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">anomaly_detector.</span></span><span class="sig-name descname"><span class="pre">AnomalyDetector</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">fps</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">25</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/anomaly_detector.html#AnomalyDetector"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#anomaly_detector.AnomalyDetector" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="anomaly_detector.AnomalyDetector.detect_abandoned_objects">
+<span class="sig-name descname"><span class="pre">detect_abandoned_objects</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tracked_objects</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">frame_count</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/anomaly_detector.html#AnomalyDetector.detect_abandoned_objects"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#anomaly_detector.AnomalyDetector.detect_abandoned_objects" title="Permalink to this definition">¶</a></dt>
+<dd><p>Detect objects left behind by people</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="anomaly_detector.AnomalyDetector.detect_all_anomalies">
+<span class="sig-name descname"><span class="pre">detect_all_anomalies</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tracked_objects</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">current_frame</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">frame_count</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/anomaly_detector.html#AnomalyDetector.detect_all_anomalies"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#anomaly_detector.AnomalyDetector.detect_all_anomalies" title="Permalink to this definition">¶</a></dt>
+<dd><p>Run all anomaly detection methods with balanced sensitivity</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="anomaly_detector.AnomalyDetector.detect_crowds">
+<span class="sig-name descname"><span class="pre">detect_crowds</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tracked_objects</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/anomaly_detector.html#AnomalyDetector.detect_crowds"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#anomaly_detector.AnomalyDetector.detect_crowds" title="Permalink to this definition">¶</a></dt>
+<dd><p>Detect unusually dense groups of people</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="anomaly_detector.AnomalyDetector.detect_running_people">
+<span class="sig-name descname"><span class="pre">detect_running_people</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tracked_objects</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/anomaly_detector.html#AnomalyDetector.detect_running_people"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#anomaly_detector.AnomalyDetector.detect_running_people" title="Permalink to this definition">¶</a></dt>
+<dd><p>Detect people moving faster than normal walking speed</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="anomaly_detector.AnomalyDetector.detect_sudden_motion_changes">
+<span class="sig-name descname"><span class="pre">detect_sudden_motion_changes</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">current_frame</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/anomaly_detector.html#AnomalyDetector.detect_sudden_motion_changes"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#anomaly_detector.AnomalyDetector.detect_sudden_motion_changes" title="Permalink to this definition">¶</a></dt>
+<dd><p>Detect sudden changes in overall scene motion</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="anomaly_detector.AnomalyDetector.detect_unusual_motion_patterns">
+<span class="sig-name descname"><span class="pre">detect_unusual_motion_patterns</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tracked_objects</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">current_frame</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/anomaly_detector.html#AnomalyDetector.detect_unusual_motion_patterns"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#anomaly_detector.AnomalyDetector.detect_unusual_motion_patterns" title="Permalink to this definition">¶</a></dt>
+<dd><p>Detect unusual movement patterns</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">SurveillanceSystem</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Project Modules</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#surveillance_system.AvenueDatasetLoader"><code class="docutils literal notranslate"><span class="pre">AvenueDatasetLoader</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#surveillance_system.ObjectDetectionSystem"><code class="docutils literal notranslate"><span class="pre">ObjectDetectionSystem</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#surveillance_system.ObjectDetector"><code class="docutils literal notranslate"><span class="pre">ObjectDetector</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#surveillance_system.VideoProcessor"><code class="docutils literal notranslate"><span class="pre">VideoProcessor</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#surveillance_system.main"><code class="docutils literal notranslate"><span class="pre">main()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#anomaly_detector.AbandonedObjectDetector"><code class="docutils literal notranslate"><span class="pre">AbandonedObjectDetector</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#anomaly_detector.AnomalyDetector"><code class="docutils literal notranslate"><span class="pre">AnomalyDetector</span></code></a></li>
+</ul>
+</li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="index.html" title="previous chapter">Welcome to SurveillanceSystem’s documentation!</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2025, Karan Sehgal.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 7.1.2</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.13</a>
+      
+      |
+      <a href="_sources/modules.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
