@@ -1,0 +1,27 @@
+# Ignore Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Ignore Sphinx source files
+*.rst
+
+# Ignore data and output folders
+data/
+output/
+output_tracking/
+output_tracking_anomaly/
+output_tracking_anomaly_better/
+output_tracking_anomaly_better_try1/
+
+# Ignore Sphinx build artifacts except HTML
+build/
+!build/html/
+
+# Ignore other build info
+*.doctree
+.buildinfo
+
+# Ignore OS files
+.DS_Store
+Thumbs.db
