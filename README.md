@@ -118,14 +118,6 @@ This project provides a strong foundation. Future enhancements could include:
 - **Adaptive Thresholds**: Implement a calibration mode to allow the system to learn "normal" behavior in a scene and set anomaly thresholds dynamically
 - **Web-Based UI**: Develop a web interface to view live streams, manage alerts, and review logged events
 
-## 🤝 Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-## 📝 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
 ## 🙏 Acknowledgments
 
 - The YOLO models (v3 and v8) for state-of-the-art object detection
@@ -136,5 +128,3 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 **Karan Sehgal** - 22BCE3939  
 *Vellore Institute of Technology, Vellore*
-
-Project Link: [https://github.com/your-username/ai-surveillance-system](https://github.com/your-username/ai-surveillance-system)
